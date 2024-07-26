@@ -1,0 +1,116 @@
+:root {
+  --primary-color: #ffffff;
+  --secondary-color: #141414;
+  --secondary-color-ligher: #1f1f1f;
+  --secondary-color-ligher2: #333333;
+  --tertiary-color: #0bdbb6;
+  --spacing-500: 40px;
+  --spacing-300: 24px;
+  --spacing-200: 16px;
+  --spacing-150: 12px;
+  --spacing-100: 8px;
+  --spacing-50: 4px;
+  --text-preset-1: 24px;
+  --text-preset-2: 14px;
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Inter', sans-serif;
+  line-height: 150%;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+}
+
+.card {
+  border: 1px solid black;
+  max-width: 279px;
+  padding: var(--spacing-300);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--secondary-color-ligher);
+}
+
+.picture {
+  border-radius: 999px;
+  width: 88px;
+}
+
+h1 {
+  font-size: var(--text-preset-1);
+  font-weight: 600;
+  line-height: 150%;
+  margin-top: var(--spacing-300);
+  margin-bottom: 0px;
+}
+
+.city {
+  font-size: var(--text-preset-2);
+  color: var(--tertiary-color);
+  font-weight: 700;
+  line-height: 150%;
+  margin: 0px 0px;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: var(--spacing-200);
+}
+
+.social-links-item {
+  width: 100%;
+}
+
+a {
+  font-size: var(--text-preset-2);
+  font-weight: 700;
+  line-height: 150%;
+  text-decoration: none;
+  color: var(--primary-color);
+  background-color: var(--secondary-color-ligher2);
+  border-radius: 8px;
+  display: block;
+  padding: var(--spacing-150);
+  text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.headings {
+  text-align: center;
+}
+
+.bio {
+  font-size: var(--text-preset-2);
+  font-weight: 400;
+  font-style: normal;
+  margin: var(--spacing-300) var(--spacing-300);
+}
+
+a:hover {
+  color: var(--secondary-color);
+  background-color: var(--tertiary-color);
+  cursor: pointer;
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .card {
+    padding: var(--spacing-500);
+    max-width: 456px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .card {
+    padding: var(--spacing-500);
+    max-width: 384px;
+  }
+}
