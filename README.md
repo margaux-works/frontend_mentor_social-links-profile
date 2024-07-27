@@ -40,8 +40,8 @@ Users should be able to:
 
 ### What I learned
 
-This challenges helped me to feel way more confortable about the way I set-up margin and padding. I also used variable for the spacing which was very handy.
-I am started to see the potential of using variables, even for small projects like this, where I could easily play around with the secondary color that I wanted to use for this page.
+This challenges helped me to feel way more confortable about the way I set-up margin and padding. I also used variable for the spacing which was very handy. I am started to see the potential of using variables, even for small projects like this, where I could easily play around with the secondary color that I wanted to use for this page.
+I also used REM for the first time to make my code more accessible and adaptable.
 
 ### Continued development
 
