@@ -4,19 +4,20 @@
   --secondary-color-ligher: #1f1f1f;
   --secondary-color-ligher2: #333333;
   --tertiary-color: #0bdbb6;
-  --spacing-500: 40px;
-  --spacing-300: 24px;
-  --spacing-200: 16px;
-  --spacing-150: 12px;
-  --spacing-100: 8px;
-  --spacing-50: 4px;
-  --text-preset-1: 24px;
-  --text-preset-2: 14px;
+  --spacing-500: 2.5rem;
+  --spacing-300: 1.5rem;
+  --spacing-200: 1rem;
+  --spacing-150: 0.75rem;
+  --spacing-100: 0.5rem;
+  --spacing-50: 0.25rem;
+  --text-preset-1: 1.5rem;
+  --text-preset-2: 0.875rem;
 }
 
 body,
 html {
   height: 100%;
+  min-height: 100vh;
   margin: 0;
   display: flex;
   align-items: center;
@@ -25,13 +26,14 @@ html {
   line-height: 150%;
   color: var(--primary-color);
   background-color: var(--secondary-color);
+  padding: var(--spacing-200);
 }
 
 .card {
   border: 1px solid black;
   max-width: 279px;
   padding: var(--spacing-300);
-  border-radius: 12px;
+  border-radius: 0.75rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -39,7 +41,7 @@ html {
 }
 
 .picture {
-  border-radius: 999px;
+  border-radius: 50%;
   width: 88px;
 }
 
@@ -64,20 +66,17 @@ h1 {
   flex-direction: column;
   width: 100%;
   gap: var(--spacing-200);
+  list-style: none;
 }
 
 .social-links-item {
-  width: 100%;
-}
-
-a {
   font-size: var(--text-preset-2);
   font-weight: 700;
   line-height: 150%;
   text-decoration: none;
   color: var(--primary-color);
   background-color: var(--secondary-color-ligher2);
-  border-radius: 8px;
+  border-radius: 0.5rem;
   display: block;
   padding: var(--spacing-150);
   text-align: center;
@@ -95,7 +94,7 @@ a {
   margin: var(--spacing-300) var(--spacing-300);
 }
 
-a:hover {
+.social-links-item:hover {
   color: var(--secondary-color);
   background-color: var(--tertiary-color);
   cursor: pointer;
